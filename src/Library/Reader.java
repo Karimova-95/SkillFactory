@@ -22,7 +22,7 @@ public class Reader {
         System.out.println(name + " взял " + kol + " книги");
     }
 
-    public void takeBook(String[] arr) {
+    public void takeBook(String... arr) {
         System.out.print(name + " взял книги: ");
         for (int i = 0; i < arr.length; i++) {
             if (i == arr.length - 1) {
@@ -33,7 +33,7 @@ public class Reader {
         }
     }
 
-    public void takeBook(Book[] book) {
+    public void takeBook(Book... book) {
         System.out.println(name + " взял книги: ");
         for (int i = 0; i < book.length; i++) {
             if (i == book.length - 1) {
@@ -49,7 +49,7 @@ public class Reader {
         System.out.println(name + " вернул " + kol + " книги");
     }
 
-    public void returnBook(String[] arr) {
+    public void returnBook(String... arr) {
         System.out.print(name + " вернул книги: ");
         for (int i = 0; i < arr.length; i++) {
             if (i == arr.length - 1) {
@@ -60,7 +60,7 @@ public class Reader {
         }
     }
 
-    public void returnBook(Book[] book) {
+    public void returnBook(Book... book) {
         System.out.println(name + " вернул книги: ");
         for (int i = 0; i < book.length; i++) {
             if (i == book.length - 1) {
