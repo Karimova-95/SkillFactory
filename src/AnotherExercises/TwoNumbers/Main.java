@@ -1,4 +1,4 @@
-package TwoNumbers;
+package AnotherExercises.TwoNumbers;
 
 public class Main {
 

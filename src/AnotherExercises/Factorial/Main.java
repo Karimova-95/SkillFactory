@@ -1,4 +1,6 @@
-package Factorial;
+package AnotherExercises.Factorial;
+
+import AnotherExercises.Factorial.Factorial;
 
 import java.util.Scanner;
 //рекурсивный метод

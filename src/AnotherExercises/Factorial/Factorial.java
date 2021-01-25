@@ -1,4 +1,4 @@
-package Factorial;
+package AnotherExercises.Factorial;
 
 public class Factorial {
 

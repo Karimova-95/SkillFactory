@@ -1,4 +1,4 @@
-package Matrix;
+package AnotherExercises.Matrix;
 
 public class Main {
 

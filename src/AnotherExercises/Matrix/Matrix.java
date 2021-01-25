@@ -1,4 +1,4 @@
-package Matrix;
+package AnotherExercises.Matrix;
 
 import java.util.Arrays;
 
@@ -86,7 +86,7 @@ public class Matrix {
 
     @Override
     public String  toString() {
-        return "Matrix{" +
+        return "AnotherExercises.Factorial.Factorial.Matrix{" +
                 "row=" + row +
                 ", col=" + col +
                 ", array=" + Arrays.toString(array) +

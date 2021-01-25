@@ -1,4 +1,4 @@
-package Library;
+package AnotherExercises.Library;
 
 public class Book {
     public String nameOfBook;

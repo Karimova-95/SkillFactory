@@ -1,4 +1,4 @@
-package Student;
+package AnotherExercises.Student;
 
 public class Main {
 

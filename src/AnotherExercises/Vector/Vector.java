@@ -1,4 +1,4 @@
-package Vector;
+package AnotherExercises.Vector;
 
 public class Vector {
     private int x;
@@ -46,7 +46,7 @@ public class Vector {
 
     @Override
     public String toString() {
-        return "Vector{" +
+        return "AnotherExercises.Factorial.Factorial.Vector{" +
                 "x=" + x +
                 ", y=" + y +
                 ", z=" + z +
