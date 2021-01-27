@@ -1,8 +1,8 @@
 package AnotherExercises.Library;
 
 public class Book {
-    public String nameOfBook;
-    public String authorName;
+    public final String nameOfBook;
+    public final String authorName;
 
     public Book(String nameOfBook, String authorName) {
         this.nameOfBook = nameOfBook;

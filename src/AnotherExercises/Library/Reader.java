@@ -3,10 +3,10 @@ package AnotherExercises.Library;
 import java.time.LocalDate;
 
 public class Reader {
-    private String name;
+    private final String name;
     private static int id;
     private String faculty;
-    private LocalDate bday;
+    private final LocalDate bday;
     private long phone;
 
     public Reader(String name, String faculty, LocalDate bday, long phone) {
@@ -19,7 +19,7 @@ public class Reader {
     }
 
     public void takeBook(int kol) {
-        System.out.println(name + " взял " + kol + " книги");
+        System.out.println(name + " взял " + kol + " книги.");
     }
 
     public void takeBook(String... arr) {
@@ -37,9 +37,9 @@ public class Reader {
         System.out.println(name + " взял книги: ");
         for (int i = 0; i < book.length; i++) {
             if (i == book.length - 1) {
-                System.out.print(book[i].nameOfBook + ".");
+                System.out.print("Название книги: " + book[i].nameOfBook + ", автор: " + book[i].authorName + ".");
             } else {
-                System.out.print(book[i].nameOfBook + ", ");
+                System.out.print("Название книги: " + book[i].nameOfBook + ", автор: " + book[i].authorName +  ",\n");
             }
         }
     }
@@ -64,9 +64,9 @@ public class Reader {
         System.out.println(name + " вернул книги: ");
         for (int i = 0; i < book.length; i++) {
             if (i == book.length - 1) {
-                System.out.print(book[i].nameOfBook + ".");
+                System.out.print("Название книги: " + book[i].nameOfBook + ", автор: " + book[i].authorName + ".");
             } else {
-                System.out.print(book[i].nameOfBook + ", ");
+                System.out.print("Название книги: " + book[i].nameOfBook + ", автор: " + book[i].authorName +  ", \n");
             }
         }
     }
