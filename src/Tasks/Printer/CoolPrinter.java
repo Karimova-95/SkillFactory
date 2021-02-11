@@ -1,7 +1,6 @@
 package Tasks.Printer;
 
 import java.util.ArrayList;
-import java.util.Formatter;
 
 public class CoolPrinter {
     public static String testString = "";
@@ -19,16 +18,11 @@ public class CoolPrinter {
             return;
         }
         for (String line : lines) {
-            System.out.println(new Tasks.Printer.Formatter() {
-                @Override
-                public String format(String line) {
-                    return "** " + line + " **";
-                }
-            }.format(line));
+            System.out.println(formatter.format(line));
         }
-//        if (!formatter.getClass().isAnonymousClass()) {
-//            System.out.println("BUT FORMATTER'S CLASS IS NOT ANONYMOUS...");
-//        }
+        if (!formatter.getClass().isAnonymousClass()) {
+            System.out.println("BUT FORMATTER'S CLASS IS NOT ANONYMOUS...");
+        }
     }
 
     public static void clear() {
