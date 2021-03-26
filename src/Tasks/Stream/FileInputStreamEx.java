@@ -12,8 +12,8 @@ public class FileInputStreamEx {
         //File fileName = new File("C:\\Users\\hp\\IdeaProjects\\SkillFactory\\src\\Tasks\\Stream\\smallfile.txt");
         FileInputStream fis = new FileInputStream(fileName);
         int i;
-        int n = fis.available();
-        System.out.println(n);
+//        int n = fis.available();
+//        System.out.println(n);
         while ((i = fis.read()) != -1) {
             System.out.print((char) i);
         }
