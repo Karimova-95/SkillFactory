@@ -34,12 +34,10 @@ public class Counter {
             }
         };
 
-
         thread1.start();
         thread2.start();
         Thread.currentThread().sleep(3000);
         thread1.interrupt();
         thread2.interrupt();
-
     }
 }

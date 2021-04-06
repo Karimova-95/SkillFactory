@@ -3,11 +3,11 @@ package Modul_12;
 import java.util.concurrent.LinkedBlockingDeque;
 import java.util.concurrent.TimeUnit;
 
-public class Pizzeria {
+public class Pizzeria2 {
     private LinkedBlockingDeque<String> pizzaCar = new LinkedBlockingDeque(2);
     private long startWorking;
 
-    public Pizzeria() {
+    public Pizzeria2() {
         startWorking = System.currentTimeMillis();
     }
 
@@ -15,7 +15,7 @@ public class Pizzeria {
 
     }
 
-    void order (String pizzaName) {
+    private void order (String pizzaName) {
         if (System.currentTimeMillis() - startWorking < 5000) {
             new Client() {
                 public void run() {
@@ -39,7 +39,7 @@ public class Pizzeria {
 
     public static void main(String[] args) throws InterruptedException {
 
-        Pizzeria pizzeria = new Pizzeria();
+        Pizzeria2 pizzeria = new Pizzeria2();
         pizzeria.order("Margarita");
         Thread.sleep(100);
         pizzeria.order("Pepperoni");

@@ -1,8 +1,10 @@
 package Modul_13.Bank;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 public class Bank {
 
-    private int money = 10000;
+    private AtomicInteger money = new AtomicInteger(10000);
 
     public Bank() {
         new Client().start();
@@ -10,16 +12,16 @@ public class Bank {
         new Client().start();
     }
 
-    int getMoney() {
+    AtomicInteger getMoney() {
         return money;
     }
 
     void take(int money) {
-        this.money -= money;
+        this.money.getAndAdd(-money);
     }
 
     void repay(int money) {
-        this.money += money;
+        this.money.getAndAdd(money);
     }
 
     class Client extends Thread{
