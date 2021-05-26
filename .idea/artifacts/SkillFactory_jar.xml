@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="SkillFactory:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/SkillFactory_jar</output-path>
-    <root id="archive" name="SkillFactory.jar">
-      <element id="module-output" name="SkillFactory" />
-    </root>
-  </artifact>
-</component>
